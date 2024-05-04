@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="skills.js"></script>
+    <title>Skills and Languages</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-2">DETAILS</h1><hr>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- first column -->
+                <h3>Skills</h3>
+                <div id="skillFieldsContainer">
+                    <div class="form-group mt-3 original-field">
+                        <label for="SkillField">Skill:</label>
+                        <input type="text" id="skillField" class="form-control skillField" placeholder="Skill">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary" onclick="addSkill()">Add</button><br>
+                
+                <button class="btn btn-danger btn-lg align-right mt-3" onclick="location.href='prof_exp.html';" type="submit">Back</button>
+            </div>
+            <div class="col-md-6">
+                <h3>Languages</h3>
+                <div id="languageFieldsContainer">
+                    <div class="form-group mt-3 original-field">
+                        <label for="LanguageField">Language:</label>
+                        <input type="text" id="languageField" class="form-control languageField" placeholder="Language">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-primary" onclick="addLanguage()">Add</button><br>
+                
+                <button class="btn btn-success btn-lg align-right mt-3"onclick="saveskillsDetails()"type="submit">Next</button>
+                <!-- onclick="location.href='internship_certification.html';" -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addSkill() {
+            var skillFieldContainer = document.getElementById("skillFieldsContainer");
+            var originalField = skillFieldContainer.querySelector(".original-field");
+            var newSkillField = originalField.cloneNode(true);
+            // Clearing the value of the cloned input field
+            newSkillField.querySelector(".skillField").value = "";
+            // Remove label element from the cloned input field container
+            newSkillField.querySelector("label").remove();
+            // Add delete button
+            newSkillField.innerHTML += '<button class="btn btn-outline-danger delete-button" onclick="deleteField(this)">X</button>';
+            skillFieldContainer.appendChild(newSkillField);
+        }
+
+        function addLanguage() {
+            var languageFieldContainer = document.getElementById("languageFieldsContainer");
+            var originalField = languageFieldContainer.querySelector(".original-field");
+            var newLanguageField = originalField.cloneNode(true);
+            // Clearing the value of the cloned input field
+            newLanguageField.querySelector(".languageField").value = "";
+            // Remove label element from the cloned input field container
+            newLanguageField.querySelector("label").remove();
+            // Add delete button
+            newLanguageField.innerHTML += '<button class="btn btn-outline-danger delete-button" onclick="deleteField(this)">X</button>';
+            languageFieldContainer.appendChild(newLanguageField);
+        }
+
+        function deleteField(button) {
+            button.parentNode.remove();
+        }
+    </script>
+</body>
+</html>

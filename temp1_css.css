@@ -1,0 +1,24 @@
+/* @media only screen and (max-width: 768px){
+.container {
+        padding: 10px;
+    }
+} */
+
+/* #cv-form{
+    display: none;
+} */
+.my-img{
+    border-radius: 50%;
+    /* border:1px solid red; */
+    width: 200px;
+}
+/* .background{
+    background-color: aquamarine;
+} */
+/* .background2{
+    background-color: aquamarine;
+} */
+
+.background {
+    background-color: lightblue; /* Change this to the desired background color */
+}

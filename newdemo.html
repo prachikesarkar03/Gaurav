@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        hr {
+            margin-bottom: 2rem;
+            border: 0;
+            width: 100%;
+        }
+        .hr-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .experience-entry,
+        .experience-entry-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .form-group {
+            width: 100%;
+        }
+        .designation {
+            margin-top: 2rem;
+        }
+    </style>
+    <title>Professional Experience</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to add a new professional experience entry
+            function addExperience() {
+                const containerLeft = document.getElementById('experience-container-left');
+                const containerRight = document.getElementById('experience-container-right');
+                
+                const entryLeft = document.querySelector('.experience-entry').cloneNode(true);
+                const entryRight = document.querySelector('.experience-entry-right').cloneNode(true);
+                
+                entryLeft.classList.remove('experience-entry'); // Remove class to avoid cloning issues
+                entryRight.classList.remove('experience-entry-right'); // Remove class to avoid cloning issues
+                
+                // Update classes for the cloned elements to ensure uniqueness
+                entryLeft.querySelectorAll('.form-control').forEach(function(input) {
+                    input.classList.add('cloned');
+                });
+                entryRight.querySelectorAll('.form-control').forEach(function(input) {
+                    input.classList.add('cloned');
+                });
+    
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.classList.add('btn', 'btn-danger', 'btn-sm', 'delete-btn');
+                deleteBtn.addEventListener('click', function() {
+                    containerLeft.removeChild(entryLeft);
+                    containerRight.removeChild(entryRight);
+                });
+    
+                // Append the delete button to the left side entry
+                entryLeft.appendChild(deleteBtn);
+    
+                // Append the cloned entries to the containers
+                containerLeft.appendChild(entryLeft);
+                containerRight.appendChild(entryRight);
+
+                // Clear values of cloned fields
+                entryLeft.querySelectorAll('.cloned').forEach(function(input) {
+                    input.value = '';
+                });
+                entryRight.querySelectorAll('.cloned').forEach(function(input) {
+                    input.value = '';
+                });
+            }
+    
+            // Add event listener to the "Add More" button
+            const addExperienceBtn = document.getElementById('addExperienceBtn');
+            addExperienceBtn.addEventListener('click', addExperience);
+
+            // Initial alignment
+            addExperience();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-2">DETAILS</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- first column -->
+                <div id="experience-container-left">
+                    <h3>Professional Experience</h3>
+                    <div class="experience-entry">
+                        <div class="form-group">
+                            <label for="CompanyField">Company/Organization</label>
+                            <input type="text" class="form-control company" placeholder="eg. IBM">
+                        </div>
+                        <div class="form-group">
+                            <label for="startField">Start</label>
+                            <input type="month" class="form-control start" min="1979-01" max="present">
+                        </div>
+                        <div class="form-group">
+                            <label for="cityField">City</label>
+                            <input type="text" class="form-control city" placeholder="eg. Mumbai">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-3" id="addExperienceBtn">+</button>
+            </div>
+            <div class="col-md-6">
+                <!-- second column -->
+                <div id="experience-container-right">
+                    <div class="experience-entry-right">
+                        <div class="form-group designation">
+                            <label for="designationField">Designation</label>
+                            <input type="text" id="designationField" placeholder="eg. Software Developer" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="endField">End</label>
+                            <input type="month" id="endField" min="1979-01" max="present" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="CountryField">Country</label>
+                            <input type="text" id="CountryField" placeholder="eg. India" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" value="" id="flexCheckDefault">
+                            <label for="flexCheckDefault">I presently work here</label> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr> <!-- Horizontal line added here -->
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-danger btn-lg mt-3" onclick="location.href='qualification.html';" type="button">Back</button>
+            </div>
+            <div class="col-md-6 text-end">
+                <button class="btn btn-success btn-lg mt-3" onclick="location.href='skills.html';" type="button">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

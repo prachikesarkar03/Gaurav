@@ -1,0 +1,466 @@
+/* body{
+    background-image: url('images/job_bg.jpg');
+    height: auto;
+    width: 100%;
+} */
+header {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    height: 70px;
+    /* background-color:#2c2828; */
+    background-color: #F8F8FF;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img{
+    position: relative;
+    margin-left: -1.9px;
+    margin-top: -5px;
+    background-color: #F8F8FF;
+    width: 100%; 
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    align-content: center;
+    background-color: #F8F8FF;
+    position: relative;
+    
+
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    align-content: center;
+    display: block;
+    padding: 10px 20px;
+    color:black;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a:hover{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.one img{
+    box-shadow: 0 0 100px greenyellow;
+    position: relative;
+    /* opacity: 50%; */
+    margin-top: 100px;
+    float: right;
+    height: 450px;
+    width: 650px;
+}
+
+.two{
+    
+    position: absolute;
+    margin-top: 100px;
+}
+.three button{
+    position: absolute;
+    margin-top: 250px;
+    font-size: 30px;
+    /* padding: 30px 50px; */
+    padding: 10px 20px;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+}
+.three button:hover{
+    background-color: rgb(147, 226, 147);
+    color: black;
+}
+.four{
+    margin-top: 350px;
+    height: auto;
+    width: 100px;
+    margin-left: -100px;
+}
+.four img{
+    position: absolute;
+    height: 200px;
+}
+.five img{
+    margin-top: 45px;
+    margin-left: 250px;
+    height: 100px;
+    width: 170px;
+
+}
+.text{
+    position: absolute;
+    background-color: rgb(235, 115, 115);
+    margin-top: 350px;
+    margin-left: -70px;
+    height: 250px;
+    width: 210px;
+    text-align: center;
+    
+}
+.text2 h2{
+
+        padding: 20px 15px;
+    
+}
+.six img{
+    position: absolute;
+    background-color: rgb(235, 115, 115);
+    height: 250px;
+    width: 400px;
+  margin-top: 350px;
+  margin-left: 140px;
+  
+}
+
+
+.text2{
+    position: absolute;
+    background-color: rgb(235, 115, 115);
+    margin-top: 350px;
+    margin-left: 590px;
+    height: 250px;
+    width: 210px;
+    text-align: center;
+    
+}
+.text h2{
+
+        padding: 20px 15px;
+    
+}
+.seven img{
+    position: absolute;
+    background-color: rgb(235, 115, 115);
+    height: 250px;
+    width: 380px;
+  margin-top: 350px;
+  margin-left: 800px;
+  
+}
+.eight{
+    margin-top: 1000px;
+}
+.nine{
+    margin-top: 30px;
+    background-color: rgb(100, 230, 139);
+    width: 220px;
+    height: 250px;
+
+}
+.nine h4{
+    /* .h4{ */
+        padding-left: 10px;
+    /* } */
+}
+.nine h6{
+    padding-left: 10px;
+}
+.nine img{
+    border-radius: 100px;
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+}
+
+.ten{
+    margin-top: -250px;
+    margin-left: 290px;
+    background-color: rgb(100, 230, 139);
+    width: 220px;
+    height: 250px;
+
+}
+.ten h4{
+    padding-left: 10px;
+}
+.ten h6{
+    padding-left: 10px;
+}
+.ten img{
+    border-radius: 100px;
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+}
+.eleven{
+    margin-top: -250px;
+    margin-left: 600px;
+    background-color: rgb(100, 230, 139);
+    width: 220px;
+    height: 250px;
+
+}
+.eleven h4{
+    /* .h4{ */
+        padding-left: 10px;
+    /* } */
+}
+.eleven h6{
+    padding-left: 10px;
+}
+.eleven img{
+    border-radius: 100px;
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+}
+.twelve{
+    margin-top: -250px;
+    margin-left: 900px;
+    background-color: rgb(100, 230, 139);
+    width: 220px;
+    height: 250px;
+
+}
+.twelve h4{
+    
+        padding-left: 10px;
+}
+.twelve h6{
+    padding-left: 10px;
+}
+.twelve img{
+    border-radius: 100px;
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+}
+.thirteen img{
+    width: 100%;
+    height: 300px;
+}
+.fourteen{
+    text-align: center;
+    /* background-color: rgb(99, 93, 93); */
+}
+.glassdoor{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: -70px;
+}
+.glassdoor h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.glassdoor img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 150px;
+    width: 70%;
+    
+}
+.glassdoor h6{
+    margin-left: 15px;
+}
+.glassdoor button{
+    font-size: 26px;
+    margin-top:50px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+.naukri{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: -70px;
+}
+.naukri h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.naukri img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 150px;
+    width: 70%;
+    
+}
+.naukri h6{
+    margin-left: 15px;
+}
+.naukri button{
+    font-size: 26px;
+    margin-top:50px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+.indeed{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: 350px;
+    margin-top: -900px;
+}
+.indeed h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.indeed img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 150px;
+    width: 70%;
+    
+}
+.indeed h6{
+    margin-left: 15px;
+}
+.indeed button{
+    font-size: 26px;
+    margin-top:70px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+.apna{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: 350px;
+    /* margin-top: -900px; */
+}
+.apna h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.apna img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 150px;
+    width: 70%;
+    
+}
+.apna h6{
+    margin-left: 15px;
+}
+.apna button{
+    font-size: 26px;
+    margin-top:50px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+
+.foundit{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: 780px;
+    margin-top: -900px;
+}
+.foundit h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.foundit img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 150px;
+    width: 70%;
+    
+}
+.foundit h6{
+    margin-left: 15px;
+}
+.foundit button{
+    font-size: 26px;
+    margin-top:50px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+.linkedin{
+    background-color: rgb(221, 221, 150);
+    height: 450px;
+    width: 400px;
+    margin-left: 780px;
+    /* margin-top: -900px; */
+}
+.linkedin h2{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    text-align: center;
+}
+.linkedin img{
+    /* padding-top: 30px; */
+    padding: 5px 15px;
+    margin-left: 50px;
+    height: 170px;
+    width: 70%;
+    
+}
+.linkedin h6{
+    margin-left: 15px;
+}
+.linkedin button{
+    font-size: 26px;
+    margin-top:50px;
+    margin-left: 50%;
+    width: 170px;
+    /* padding: 20px; */
+    background-color: rgb(182, 226, 124);
+    /* color: red; */
+}
+
+.footer {
+    background-color:#1f1d1d;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-left: -117px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: larger;
+ }
+ 

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <title>Qualification Details</title>
+</head>
+<body>
+    <style>
+
+    .delete-button {
+    padding: 0.1rem 0.3rem; 
+    width: 80px;
+    height: 40px;
+}
+
+    </style>
+    <!-- <script src="qualijavascript.js"></script>     -->
+    <script src="qualification.js"></script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div class="container">
+        <h1 class=  "text-center my-2">DETAILS</h1><hr>
+        <div class="row" id="qualification-container" class="qualification-entry">
+            <div class="col-md-6">
+                <div id="imput-container">
+                <!-- first column -->
+                <h3>Qualification</h3>
+                <div class="form-group mt-3">
+                    <label for="nameField">School/College</label>
+                    <input type="text" id="schField"class="form-control">
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="nameField">Start</label>
+                    <input type="month" id="startField" min="1979-01" max="present" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="nameField">City</label>
+                    <input type="text" id="cityField" placeholder="eg.Mumbai" class="form-control">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="nameField">Degree</label>
+                    <input type="text" id="degreeField"class="form-control">
+                </div>
+                <hr>
+                <button class="btn btn-danger btn-lg align-right mt-3 mright-6" onclick="location.href='personal.html';" type="submit">Back</button>
+            
+
+            </div>
+        </div>
+                <div class="col-md-6" id="qualification-container">
+                    <!-- second column -->
+                    <div class="form-group mt-5">
+                        <label for="nameField">Field of Study</label>
+                        <input type="text" id="fieldofstudyField"class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="nameField">End</label>
+                        <input type="month" id="endField" min="1979-01" max="present" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="checkbox" value="" id="flexCheckDefault">
+                        <label for="nameField">Currently Pursuing</label> 
+                    </div>
+                    
+                    <div class="form-group mt-3">
+                        <label for="nameField">Country</label>
+                        <input type="text" id="countryField" placeholder="eg.India" class="form-control">
+                    </div>
+                    <!-- <input type="submit" onclick="addnewDegree()" class="btn btn-primary" value="+" id="aq"><br> -->
+                    <button onclick="addNewDegree()" class="btn btn-primary" type="button">Add</button>
+                    <hr>
+                    <!-- <button class="btn btn-success btn-lg align-right mt-3 mright-6" onclick="saveQualificationDetails()"type="submit">Next</button> -->
+                    <!-- onclick="location.href='prof_exp.html'; -->
+                    <br><br><br><br><br><br><button class="btn btn-success btn-lg align-right mt-3 mright-6"  onclick="savequalificationDetails()"type="submit">Next</button>
+
+
+
+
+
+                </div>
+                
+    
+</body>
+</html>

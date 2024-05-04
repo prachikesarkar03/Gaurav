@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <form action="checklogin.php" method="GET"></form>
+    <div class="container">
+        <div class="logo">
+            <!-- <img src="\images/newlogofinal.png" alt=""> -->
+            <img src="images/IMG_20240308_014249.jpg" alt="Resume Builder Logo">
+        </div>
+        <nav>
+            <ul class="responsive">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="generate_resume.html">Create Resume</a></li>
+                <li><a href="generate_cover_letter.html">Create Cover Letter</a></li>
+                <!-- <li><a href="#">Templates</a></li> -->
+                <li><a href="samples.html">Samples</a></li>
+                <li><a href="job_openings.html">Job Openings</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="one">
+            <img src="images/about-img-01.jpg" alt="background" class="responsive">
+        </div>
+        <div class="main">
+            <h3>Login Credentials</h3>
+            <form action="">
+                <label for="first">
+                      USERNAME:
+                  </label>
+                <input type="text"
+                       id="first"
+                       name="first"
+                       placeholder="Enter your Username" required>
+     
+                <label for="password">
+                      PASSWORD:
+                  </label>
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter your Password" required>
+                       <a href="forgot_password.html">Forgot Password?</a>
+     
+                <div class="wrap">
+                    <button type="submit"
+                            onclick="solve()">
+                        Submit
+                    </button>
+                </div>
+            </form>
+            <p>Not registered? 
+                  <a href="register.html"
+                   style="text-decoration: none;">
+                    Create an account
+                </a>
+            </p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Resume Builder. All rights reserved.</p>
+        </div> 
+</body>
+</html>

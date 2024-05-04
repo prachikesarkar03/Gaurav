@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gill+Sans&display=swap">
+
+    <title>Document</title>
+    <style> .download-btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .download-options {
+        display: none;
+      }
+      .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+  }
+      
+      
+      </style>
+</head>
+<body>
+    <div class="main">
+    <div class="section1">
+        <h1><b>Prachi Kesarkar</b></h1>
+        <h3>Student</h3>
+    </div>
+    <div class="aside">
+        <div class="aside1">PROFILE</div>
+        <div class="aside2">Bussiness Administrator 
+        student.
+        I consider my self a responsible and orderly
+        person.<br>
+        I am looking forward for my first work experience.
+    
+        </div>
+        <div class="aside3">CONTACT ME</div>
+        <div class="aside4">
+            <img src="\images/templates_images/call.png " alt=""> <p>+91 7977018084</p>
+        </div>
+        <div class="aside5">
+            <img src="\images/templates_images/mail.png" alt=""><p>hello@gmail.com</p>
+        </div>
+        <div class="aside6">
+            <img src="\images/templates_images/location.png" alt=""><p>Mumbai</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="section2_1">
+            <p>EDUCATION</p>
+        </div>
+        <div class="section2_2">
+            <p>Ruparel College</p>
+            <i>BSC IT</i>
+        </div>
+        <div class="section2_3">
+            <p>Auxilium Convent High School</p>
+            <i>2019-2020</i>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="section3_1">LANGUAGE</div>
+        <div class="section3_2">
+            <ul>English</ul>
+            <ul>Marathi</ul>
+            <ul>Hindi</ul>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="section4_1">SKILLS</div>
+        <div class="section4_2">
+            <ul>HTML</ul>
+            <ul>CSS</ul>
+            <ul>Python</ul>
+        </div>
+    </div>
+    <div class="section5"></div>
+    
+
+
+
+    <button class="download-btn" id="download-btn">Download</button>
+  <div class="popup" id="popup">
+    <p>Choose file format:</p>
+    <button class="download-btn" id="pdf-btn">PDF</button>
+    <button class="download-btn" id="txt-btn">TXT</button>
+    <button class="download-btn" id="docx-btn">DOCX</button>
+  </div>  
+
+
+
+
+</div>
+<script>
+ document.getElementById('download-btn').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+  });
+
+  document.getElementById('pdf-btn').addEventListener('click', function() {
+    downloadFile('example.pdf', 'application/pdf');
+  });
+
+  document.getElementById('txt-btn').addEventListener('click', function() {
+    downloadFile('example.txt', 'text/plain');
+  });
+
+  document.getElementById('docx-btn').addEventListener('click', function() {
+    downloadFile('example.docx', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+  });
+
+  function downloadFile(filename, type) {
+    var fileContent = "File content here"; // Replace with actual file content
+    var file = new Blob([fileContent], {type: type});
+    if (window.navigator.msSaveOrOpenBlob) { // IE10+
+      window.navigator.msSaveOrOpenBlob(file, filename);
+    } else { // Others
+      var a = document.createElement("a");
+      var url = URL.createObjectURL(file);
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function() {
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);  
+      }, 0); 
+    }
+    document.getElementById('popup').style.display = 'none';
+  }</script>
+</body>
+</html>

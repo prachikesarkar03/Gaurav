@@ -1,0 +1,68 @@
+/* Stylesheet for resume */
+.resume {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    background-image: url('images/prachi.jpeg'); /* Add URL to your avatar image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .name {
+    margin: 10px 0 5px;
+    font-size: 24px;
+  }
+  
+  .designation {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .about h2 {
+    margin-top: 0;
+  }
+  
+  .contact {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    margin-bottom: 5px;
+  }
+  
+  .experience h2,
+  .expertise h2,
+  .education h2,
+  .skills h2 {
+    margin-top: 20px;
+  }
+  
+  .job h3 {
+    margin-top: 0;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  

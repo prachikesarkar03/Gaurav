@@ -1,0 +1,430 @@
+body{
+    overflow-x: hidden;
+    
+}.section{
+    /* margin-left: -120px; */
+    /* background-color: rgb(160, 210, 229); */
+    background-color: rgb(223, 241, 247);
+    margin-left: -7px;
+    height: 4900px;
+    width: 1349px;
+
+}header {
+    overflow-x: hidden;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    height: 70px;
+    /* background-color:#2c2828; */
+    background-color: #F8F8FF;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img{
+    position: relative;
+    margin-left: -1.9px;
+    margin-top: -5px;
+    background-color: #F8F8FF;
+    width: 100%; 
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    align-content: center;
+    background-color: #F8F8FF;
+    position: relative;
+    
+
+}
+
+nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    align-content: center;
+    display: block;
+    padding: 10px 20px;
+    color:black;
+    text-decoration: none;
+    position: relative;
+
+}
+nav ul li a:hover{
+    color: black;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.footer {
+    /* position: fixed; */
+    background-color:#1f1d1d;
+    color: white;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-left: -1px;
+    text-align: center;
+    margin-top: 370px;
+    font-size: larger;
+ }
+.section1{
+    padding: 100px 100px;
+    color: darkblue;
+    font-size: 29px;
+}
+.section2{
+    font-size: 55px;
+    margin-top: -100px;
+    margin-left: 80px;
+}
+.section3{
+    font-size: 20px;
+    padding-right:850px;
+    padding-left: 100px;
+    margin-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.section4 img{
+    /* float: right; */
+    height: 550px;
+    width: 500px;
+    margin-top: -350px;
+    margin-left: 750px;
+}
+.btn{
+    background-color: rgb(233, 193, 94);
+    /* padding: 10px 250px; */
+    border-radius: 200px;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: -150px;
+    margin-left: 170px;
+    cursor:pointer;
+
+}
+.image-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container img {
+    width: 30%; 
+}
+
+.image-container .spacing {
+    width: 5%; 
+}
+.img1 h2{
+    font-size: 30px;
+
+    margin-top: 50px;
+    color: darkblue;
+    padding: 50px 90px;
+    text-align: left;
+}
+.img1 p{
+    margin-top: -50px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 100px;
+}
+.img2 h2{
+    font-size: 30px;
+    margin-top: -180px;
+    color: darkblue;
+    padding: 50px 90px;
+    text-align: center;
+}
+.img2 p{
+    font-size: 20px;
+    margin-top: -50px;
+    text-align: center;
+}
+.img3 h2{
+    font-size: 30px;
+    margin-top: -170px;
+    color: darkblue;
+    padding: 50px 90px;
+    text-align: right;
+    margin-right: 70px;
+}
+.img3 p{
+    margin-right: 50px;
+    font-size: 20px;
+    padding-left: 1050px;
+    margin-top: -50px;
+    /* text-align: right; */
+}
+.section5{
+    padding-top: 20px;
+    color: wheat;
+    height: 670px;
+    background-color: darkcyan;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.section5 img{
+    margin-top: -20px;
+    float: right;
+}
+.section6{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px;
+    font-size: 45px;
+}
+.section7{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 22px;
+}
+.btn2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    color: wheat;
+    background-color: black;
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 10px;
+}
+.cover img{
+    padding-top: 40px;
+    padding-left: 750px;
+    height: 400px;
+    width: 500px;
+}
+.cover h1{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -400px;
+    padding-right: 790px;
+    margin-left: 120px;
+}
+.cover p{
+    font-size: 21px;
+    padding-left: 130px;
+    padding-right: 760px;
+}
+.btn3{
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 150px;
+    cursor: pointer;
+    border-color: darkcyan;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 7px;
+    font-size: 25px;
+}
+.cover2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.cover3  img{
+    margin-top: 8px;
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+}
+.cover3 p{
+    color: darkblue;
+    margin-top: -40px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.cover4  img{
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+
+}
+.cover4 p{
+    color: darkblue;
+    margin-top: -40px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.cover5  img{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.cover5 p{
+    color: darkblue;
+    margin-top: -40px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.cover6  img{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.cover6 p{
+    color: darkblue;
+    margin-top: -40px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.cover7  img{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.cover7 p{
+    color: darkblue;
+    margin-top: -40px;
+    font-size: 30px;
+    margin-left: 150px;
+}
+.last{
+    margin-left: -2px;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 150px;
+    color: white;
+    background-color:#4062bb;
+    background-image: linear-gradient(316deg, #4062bb 0%,#5200ae 74%);
+    height: 400px;
+}
+.btn4{
+    cursor: pointer;
+    border-radius: 13px;
+    border-color: lightblue;
+    padding: 20px;
+    font-size: 30px;
+    background-color: lightblue;
+}
+.faq{
+    color: darkblue;
+    margin-top: 20px;
+    font-size: 45px;
+    padding: 25px;
+    text-align: center;
+}
+.accordion{
+    margin-left: 200px;
+    margin-top: 50px;
+    max-width: 800px;
+}
+.accordion .contentBx{
+    color: darkblue;
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label{
+    margin-top: 40px;
+    width: 800px;
+    font-size: 30px;
+    position: relative;
+    padding: 10px;
+    /* background: #babbbb; */
+    background-color: rgb(223, 241, 247);
+
+    color: black;
+    cursor: pointer;
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+
+}
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+
+}
+.accordion .contentBx .content{
+    font-size: 20px;
+    position: relative;
+    /* padding: 10px; */
+    /* background: #fff; */
+    background-color: rgb(223, 241, 247);
+    /* background-color: darkcyan; */
+    /* color: wheat; */
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+
+
+}
+.accordion .contentBx.active .content{
+    height: 100px;
+    padding: 10px;
+}
+
+.containernew{
+    text-align: center;
+    padding-top: 60px;
+    background-color: rgb(223, 241, 247);
+    font-size: 20px;
+    height: 50px;
+
+}
+.containernew h2{
+    color: darkblue;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-group2{
+    padding-top: 10px;
+    /* color: red; */
+    font-size: 25px;
+
+}
+#message{
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.btnnew{
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btnnew:hover{
+    background-color: rgb(4, 4, 71);
+}
